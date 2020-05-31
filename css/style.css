@@ -21,7 +21,7 @@ body {
 .results-wrapper {
     position: absolute;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.747);
@@ -33,6 +33,7 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 500px;
+    margin-top: 150px;
     padding: 20px;
     background-color: #fff;
     border-top: 3px solid var(--red);

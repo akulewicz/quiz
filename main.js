@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
             pointsCounter += 1;
         }
     })
-
+    window.scrollTo(0,0);
     pointsBox.textContent = pointsCounter;
     percentBox.textContent = (pointsCounter/maxPoints)*100 + '%';
     resultsWrapper.style.display = 'flex';
