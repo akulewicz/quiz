@@ -1,0 +1,173 @@
+$red: rgb(155, 38, 38);
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../css/img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.results-wrapper {
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.747);
+    display: none;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-top: 150px;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 3px solid $red;
+    border-radius: 5px;
+    border-bottom: 3px solid $red;
+    &__heading {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        display: flex;
+        @media (max-width: 340px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    }
+    &__logo {
+        width: 110px;
+        margin-right: 40px;
+        height: 100%;
+        @media (max-width: 340px) {
+            margin-right: 0;
+        }
+    }
+    &__content {
+        margin-bottom: 24px;
+        text-align: center;
+        line-height: 26px;
+    }
+    &__link {
+        text-decoration: none;
+        display: inline-block;
+        margin: 30px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: $red;
+        color: white;
+        border: 2px solid $red;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    &__link:hover {
+        background-color: $red;
+    }
+}
+
+.special {
+    color: $red;
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(155, 38, 38, 0.26);
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
+    @media (max-width: 425px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        height: 250px;
+    }
+    &__logo {
+        width: 170px;
+        margin-right: 50px;
+        height: auto;
+        @media (max-width: 425px) {
+            width: 170px;
+            margin-right: 0;
+            height: auto;
+        }
+    }
+    &__title {
+        @media (max-width: 425px) {
+            font-size: 30px;
+            margin-left: 0;
+        }
+        @media (max-width: 340px) {
+            font-size: 26px;
+            margin-left: 0;
+        }
+    }
+    
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.quiz-form {
+    padding: 0 10px;
+}
+
+.quiz-box {
+    margin-bottom: 32px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid lightgrey;
+    &--last {
+        border: none;
+    }
+    &__question {
+        font-weight: 700;
+        color: $red;
+        line-height: 24px;
+    }
+    &__button {
+        display: inline-block;
+        margin-bottom: 60px;
+        padding: 10px 25px;
+        border-radius: 10px;
+        background-color: $red;
+        color: white;
+        border: 2px solid $red;
+        cursor: pointer;
+    }
+    &____button:hover {
+        background-color: $red;
+    }
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+
+
+ 
+
+
+    
